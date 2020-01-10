@@ -240,5 +240,3 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-/PAT_Advanced/resolve1003.h
-/PAT_Advanced/resolve1003.cpp
