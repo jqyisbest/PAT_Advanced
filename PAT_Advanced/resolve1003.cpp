@@ -83,7 +83,7 @@ namespace resolve1003 {
 						//更新最大救援队数量为：n1到u的最大救援队数量加上v本身的救援队数量
 						weight[v] = weight[u] + node_weight[v];
 					}
-					else
+					else if (distance[u] + edge_length==distance[v])
 					{
 						//当n1至u的距离加上uv的距离等于n1至v的距离时，从n1经由u至v为一条新的最短路径。
 						//则将n1至v的路径最短路径数num[v]更新为num[v]+num[u]。
