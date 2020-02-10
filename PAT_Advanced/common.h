@@ -2,6 +2,7 @@
 #include <math.h>
 #include <string>
 #include <algorithm> 
+#include <vector>
 using namespace std;
 namespace common {
 	void print_array(int* a, int n);
