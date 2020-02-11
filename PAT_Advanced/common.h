@@ -3,6 +3,7 @@
 #include <string>
 #include <algorithm> 
 #include <vector>
+#include <iomanip>
 using namespace std;
 namespace common {
 	void print_array(int* a, int n);
