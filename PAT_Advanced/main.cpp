@@ -1,8 +1,8 @@
 #include "common.h"
-#include "resolve1008.h"
+#include "resolve1009.h"
 
 int main() {
-	int result_code = resolve1008::resolve();
+	int result_code = resolve1009::resolve();
 	cout << "\n";
 	system("pause");
 	return result_code;
