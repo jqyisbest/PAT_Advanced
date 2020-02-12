@@ -1,3 +1,4 @@
+#include"common.h"
 namespace resolve1010 {
 	int resolve();
 	int symbol_to_int(char digit);

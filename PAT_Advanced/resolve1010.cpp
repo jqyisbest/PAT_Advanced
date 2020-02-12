@@ -1,5 +1,4 @@
 #include "resolve1010.h"
-#include "common.h"
 /*
 	哭了，这次AC太过艰难。。
 	总体思路和网上很多人的一样，暴力搜寻
