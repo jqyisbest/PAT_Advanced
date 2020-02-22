@@ -57,7 +57,6 @@ int resolve1018::resolve()
 		}
 	}
 	//Dijkstra找出所有最短路径
-	
 	for (int i = 1; i < number_of_stations+1; i++)
 	{
 		int minn = 0;
@@ -136,7 +135,7 @@ int resolve1018::resolve()
 		{
 			int deviant_num = current_number_of_bikes[path_num[j]] - capacity_of_each_station / 2;
 			if (deviant_num > 0) {
-				//说明当前站点有富裕，累积至可用车数量中，供下个站点取用
+				//说明当前站点有富余，累积至可用车数量中，供下个站点取用
 				current_bike_redundant += deviant_num;
 			}
 			else if (deviant_num < 0)
