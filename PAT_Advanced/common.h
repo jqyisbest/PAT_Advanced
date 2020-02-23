@@ -2,6 +2,7 @@
 #include <math.h>
 #include <string>
 #include <algorithm> 
+#include <list>
 #include <vector>
 #include <set>
 #include <map>
