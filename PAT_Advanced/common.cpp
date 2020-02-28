@@ -112,6 +112,5 @@ namespace common {
 		} while (digits_in_radix_ten != 0);
 		reverse(ans.begin(),ans.end());	
 		return ans;
-	}
-	
+	}	
 }
