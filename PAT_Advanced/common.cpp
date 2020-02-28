@@ -18,12 +18,14 @@ namespace common {
 			cout << a[i][n - 1] << "\n";
 		}
 	}
-	void fill_array(int* a, int n,int val) {
+
+	void fill_array(int* a, int n, int val) {
 		for (int i = 0; i < n; ++i)
 		{
 			a[i] = val;
 		}
 	}
+
 	void fill_array(int** a, int m, int n, int val) {
 		for (int i = 0; i < m; ++i)
 		{
@@ -48,9 +50,9 @@ namespace common {
 	bool sort_by_alphabetical_asc(string a, string b)
 	{
 		auto min_size = a.size() <= b.size() ? a.size() : b.size();
-		for (auto i = 0; i <min_size; ++i)
+		for (auto i = 0; i < min_size; ++i)
 		{
-			if (a[i]!=b[i])
+			if (a[i] != b[i])
 			{
 				return a[i] < b[i];
 			}
@@ -61,14 +63,14 @@ namespace common {
 	bool sort_by_alphabetical_desc(string a, string b)
 	{
 		auto min_size = a.size() >= b.size() ? a.size() : b.size();
-		for (auto i = 0; i <min_size; ++i)
+		for (auto i = 0; i < min_size; ++i)
 		{
 			if (a[i] != b[i])
 			{
 				return a[i] > b[i];
 			}
 		}
-		return min_size ==b.size();
+		return min_size == b.size();
 	}
 
 	int symbol_to_int(char digit)
@@ -110,7 +112,7 @@ namespace common {
 			}
 			digits_in_radix_ten /= target_radix;
 		} while (digits_in_radix_ten != 0);
-		reverse(ans.begin(),ans.end());	
+		reverse(ans.begin(), ans.end());
 		return ans;
-	}	
+	}
 }
