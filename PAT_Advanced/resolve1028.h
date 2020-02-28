@@ -2,7 +2,7 @@
 namespace resolve1028 {
 	int resolve();
 	typedef struct record_node {
-		string id;
+		int id;
 		string name;
 		int score;
 	}record;
