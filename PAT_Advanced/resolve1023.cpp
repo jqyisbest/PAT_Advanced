@@ -28,13 +28,14 @@ int resolve1023::resolve()
 	string result = "Yes";
 	for (size_t i = 0; i < 10; ++i)
 	{
-		if (num_of_digits[i] != 0)
+		if (flag||num_of_digits[i] != 0)
 		{
 			result = "No";
 			break;
 		}
 	}
 	cout << result<<endl;
-	cout << double_num;
+	//别忘了最后一位数的进位==
+	flag ? cout << '1' << double_num : cout << double_num;
 	return 0;
 }
