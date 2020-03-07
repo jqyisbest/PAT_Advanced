@@ -185,10 +185,12 @@
     <ClCompile Include="resolve1035.cpp" />
     <ClCompile Include="resolve1036.cpp" />
     <ClCompile Include="resolve1037.cpp" />
+    <ClCompile Include="resolve1038.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="resolve1038.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="resolve1018.h" />
     <ClInclude Include="resolve1007.h" />
