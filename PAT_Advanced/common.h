@@ -7,6 +7,7 @@
 #include <set>
 #include <map>
 #include <iomanip>
+//1042 使用memcpy出现编译错误，自此提交时全部使用 #include<bits/stdc++.h> 
 using namespace std;
 namespace common {
 	void print_array(int* a, int n);
