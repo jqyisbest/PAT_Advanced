@@ -193,6 +193,7 @@
     <ClCompile Include="resolve1043.cpp" />
     <ClCompile Include="resolve1044.cpp" />
     <ClCompile Include="resolve1045.cpp" />
+    <ClCompile Include="resolve1046.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test.h" />
   </ItemGroup>
@@ -240,6 +241,7 @@
     <ClInclude Include="resolve1043.h" />
     <ClInclude Include="resolve1044.h" />
     <ClInclude Include="resolve1045.h" />
+    <ClInclude Include="resolve1046.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
