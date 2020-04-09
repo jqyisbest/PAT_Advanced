@@ -4,24 +4,24 @@
 	按查询条件搜索结果库是否有合适的结果并所需的结果集合并所需年龄段人员并保存至结果库
 	想用递归但又怕200层递归会爆栈。。
 	测试用例是过了，但感觉要超时==
-	
+
 	。。居然是爆内存，128MB都不够我用233333
-	0	
+	0
 	Accepted
 	3 ms	640 KB
-	1	
+	1
 	Accepted
 	84 ms	7040 KB
-	2	
+	2
 	Memory Limit Exceeded
 	0 ms	0 KB
-	3	
+	3
 	Accepted
 	4 ms	856 KB
-	4	
+	4
 	Accepted
 	4 ms	804 KB
-	5	
+	5
 	Accepted
 	3 ms	744 KB
 	自我感觉这套爆内存的代码在大批量查询时效率极高==毕竟很大程度上利用了前面查询时的结果，保存一下
@@ -134,50 +134,97 @@ void resolve1055::merge_sequence(vector<person *> *person_all, vector<person *> 
 	利用set排序
 
 	吐了，超时
-	0	
+	0
 	Accepted
 	4 ms	384 KB
-	1	
+	1
 	Accepted
 	83 ms	6656 KB
-	2	
+	2
 	Time Limit Exceeded
 	--	0 KB
-	3	
+	3
 	Accepted
 	4 ms	428 KB
-	4	
+	4
 	Accepted
 	4 ms	424 KB
-	5	
+	5
 	Accepted
 	4 ms	352 KB
+
+	参照答案，只能排一次序列，可以多次用minmaxage进行过滤，并通过限制每个年龄组只有100人参加排序来减少过滤时的比较次数
+	哎，为啥我想不到用输出数量去优化过滤/(ㄒoㄒ)/~~
+	0
+	答案正确
+	4 ms	508 KB
+	1
+	答案正确
+	140 ms	6812 KB
+	2
+	答案正确
+	120 ms	7540 KB
+	3
+	答案正确
+	4 ms	368 KB
+	4
+	答案正确
+	4 ms	508 KB
+	5
+	答案正确
+	3 ms	372 KB
 */
 int resolve1055::resolve()
 {
-	int num_of_people = 0, num_of_queries = 0;
-	vector<person *> person_all[201];
+	int num_of_people = 0, num_of_queries = 0, age_person[201]{ 0 };
+	vector<person *> person_all;
 	scanf("%d %d", &num_of_people, &num_of_queries);
 	for (size_t i = 0; i < num_of_people; ++i)
 	{
 		person *person_node = new person();
 		person_node->name.resize(9);
 		scanf("%s %d %d", &person_node->name[0], &person_node->age, &person_node->money);
-		person_all[person_node->age].push_back(person_node);
+		person_all.push_back(person_node);
 	}
+	sort(person_all.begin(), person_all.end(), cmp_person);
+	//每个年龄段只允许前100人参与过滤，这样最多20000人，相比总数十万人还是少了五倍
+	vector<person *>result;
+	for (size_t i = 0; i < num_of_people; ++i)
+	{
+		person * p = person_all[i];
+		if (age_person[p->age] <= 100)
+		{
+			result.push_back(p);
+			++age_person[p->age];
+		}
+		else
+		{
+			//本年龄段已满，不需要这个人了，控制内存
+			free(p);
+		}
+	}
+	person_all.clear();
 	for (int i = 1; i <= num_of_queries; ++i)
 	{
 		int num_of_result = 0, min_age = 0, max_age = 0;
-		set<person *, decltype(cmp_person) *> current_result(cmp_person);
+		vector<person *> current_result;
 		scanf("%d %d %d", &num_of_result, &min_age, &max_age);
-		merge_sequence(person_all, current_result, min_age, max_age, num_of_result);
 		printf("Case #%d:\n", i);
+		for (size_t j = 0; j < result.size() && num_of_result>0; ++j)
+		{
+			person * p = result[j];
+			if (p->age <= max_age&&p->age >= min_age)
+			{
+				current_result.push_back(p);
+				--num_of_result;
+			}
+		}
 		if (current_result.size() > 0)
 		{
 			person *p = nullptr;
-			for (set<person *, decltype(cmp_person) *>::iterator it = current_result.begin(); it != current_result.end(); ++it)
+			for (size_t j = 0; j < current_result.size(); ++j)
 			{
-				p = (*it);
+				p = current_result[j];
 				printf("%s %d %d\n", p->name.c_str(), p->age, p->money);
 			}
 		}
@@ -205,22 +252,4 @@ bool resolve1055::cmp_person(person *p1, person *p2)
 		return p1->name <= p2->name;
 	}
 	return true;
-}
-
-void resolve1055::merge_sequence(vector<person *> *person_all, set<person *, decltype(cmp_person) *> &result, int index_1, int index_2, int num_of_result)
-{
-	for (int has_merged_age = index_1; has_merged_age <= index_2; ++has_merged_age)
-	{
-		vector<person *> persons = person_all[has_merged_age];
-		for (size_t i = 0; i < persons.size() && i < 100; ++i)
-		{
-			result.insert(persons[i]);
-			if (result.size() > num_of_result)
-			{
-				//超出输出要求，移除最后一个元素，时刻控制内存大小！
-				set<person *, decltype(cmp_person) *>::iterator last = --(result.end());
-				result.erase(last);
-			}
-		}
-	}
 }
