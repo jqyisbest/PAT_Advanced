@@ -1,6 +1,6 @@
 #include "common.h"
 namespace resolve1056 {
-	int resolve(); 
+	int resolve();
 	typedef struct player_node {
 		int id;
 		int weight;
