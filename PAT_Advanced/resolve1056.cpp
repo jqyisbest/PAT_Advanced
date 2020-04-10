@@ -2,22 +2,22 @@
 /*
 	模拟吧，没发现啥快捷的规律
 	vector的删除有点意思，两个迭代器的位置是相对固定的，如果内容动了，那两个迭代器指向的内容都会跟着动
-	0	
+	0
 	Accepted
 	4 ms	384 KB
-	1	
+	1
 	Segmentation Fault
 	3 ms	512 KB
-	2	
+	2
 	Accepted
 	4 ms	396 KB
-	3	
+	3
 	Accepted
 	5 ms	376 KB
-	4	
+	4
 	Accepted
 	5 ms	384 KB
-	5	
+	5
 	Segmentation Fault
 	4 ms	384 KB
 
@@ -25,22 +25,22 @@
 	cao，每一轮中如果老鼠刚好可以分组的情况下不应组数不应加1且对应的排序的最后一组无需调整边界
 	这种找自己逻辑漏洞的感觉真痛苦，但它一定会是值得的
 	最强大的敌人，就是自己
-	0	
+	0
 	Accepted
 	3 ms	424 KB
-	1	
+	1
 	Accepted
 	3 ms	384 KB
-	2	
+	2
 	Accepted
 	3 ms	384 KB
-	3	
+	3
 	Accepted
 	3 ms	364 KB
-	4	
+	4
 	Accepted
 	4 ms	384 KB
-	5	
+	5
 	Accepted
 	4 ms	384 KB
 */
@@ -53,7 +53,7 @@ int resolve1056::resolve()
 	//比赛过程容器
 	vector<player *> player_sort;
 	//loser标记数组
-	bool *loser = new bool[num_of_player]{false};
+	bool *loser = new bool[num_of_player] {false};
 	for (size_t i = 0; i < num_of_player; ++i)
 	{
 		player *p = new player();
@@ -81,19 +81,25 @@ int resolve1056::resolve()
 		for (size_t i = 0; i < num_of_group; ++i)
 		{
 			vector<player *>::iterator start = player_sort.begin() + i * max_of_group;
-			vector<player *>::iterator end = start + max_of_group;
+			//此处在VisualStudio上存在越界检查,end = start + max_of_group 最后一组越界
+			vector<player *>::iterator end = player_sort.end();
 			if (i == num_of_group - 1 && player_sort.size() % max_of_group != 0)
 			{
 				//只有当有剩下的老鼠时的最后一轮才调整边界
 				end = start + player_sort.size() % max_of_group;
 			}
+			else
+			{
+				end = start + max_of_group;
+			}
 			sort(start, end, cmp_player_weight);
 			//将loser的排名置为num_of_group + 1并标记
 			start = player_sort.begin() + i * max_of_group;
-			end = start + max_of_group;
-			if (i == num_of_group - 1)
+			//此处在VisualStudio上存在越界检查,end = start + max_of_group 最后一组越界
+			end = player_sort.end();
+			if (i != num_of_group - 1)
 			{
-				end = player_sort.end();
+				end = start + max_of_group;
 			}
 			while (++start != end)
 			{
@@ -106,7 +112,8 @@ int resolve1056::resolve()
 		{
 			if (loser[(*start)->id])
 			{
-				player_sort.erase(start);
+				//此处在VisualStudio上会检查野指针，start在erase后为野指针故不能直接写player_sort.erase(start);
+				start = player_sort.erase(start);
 			}
 			else
 			{
