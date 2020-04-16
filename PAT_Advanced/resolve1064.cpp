@@ -20,51 +20,56 @@
 	故此题解法：
 	先根据输入数据个数n，得出最终的输出数组索引
 	再将输入数据排序并按索引输出即可
+
+	哎，答案和我思路一样，区别在于我是从end反推根节点，答案是从start加上左子树的个数，答案的更为稳定
+	而且我不应该去考虑什么单枝问题，start==end时多算一次也无妨
+	继续加油！
 */
 int resolve1064::resolve()
 {
-	int n = 0, h = 0, start=0, end=0;
-	vector<int> value, result;
+	bool print_first = true;
+	int n = 0;
+	root_node *root = nullptr;
+	vector<int> value;
+	list<root_node*> root_list;
 	scanf("%d", &n);
-	h = ceil(log(n) / log(2));
-	start = 0, end = n;
-	while (h>0)
+	value.resize(n);
+	for (size_t i = 0; i < n; ++i)
 	{
-		if (h == 1)
-		{
-			result.push_back(start);
-			result.push_back(end);
-		}
-		else
-		{
-			int root = 0;
-			//根
-			root = get_BST_root(start, end, h);
-			result.push_back(root);
-			//左
-			root = get_BST_root(start, root-1, h-1);
-			result.push_back(root);
-			//右
-			root = get_BST_root(root+1, end, h-1);
-			result.push_back(root);
-			start+
-		}
-		h--;
+		scanf("%d", &value[i]);
 	}
-	for (size_t i = 0; i < n; i++)
+	sort(value.begin(), value.end());
+	root = get_BST_root(0, n - 1);
+	root_list.push_back(root);
+	while (root_list.size() > 0)
 	{
-		printf("%d", result[i]);
+		root = root_list.front();
+		if (!print_first)
+		{
+			printf(" ");
+		}
+		printf("%d", value[root->id]);
+		print_first = false;
+		if (root->start <= root->id - 1)
+		{
+			root_list.push_back(get_BST_root(root->start, root->id - 1));
+		}
+		if (root->id + 1 <= root->end)
+		{
+			root_list.push_back(get_BST_root(root->id + 1, root->end));
+		}
+		root_list.pop_front();
 	}
 	return 0;
 }
 
-int resolve1064::get_BST_root(int start, int end, int height)
+resolve1064::root_node* resolve1064::get_BST_root(int start, int end)
 {
-	if (start < end)
-	{
-		//最后一层叶子节点数的一半
-		int param = 2 << ((height - 3)>0 ? (height - 3) : 0);
-		int n = end - start, k = n + 2 - param * 2, root = n - (n / 2 - k / 2 + (k > param ? k - param : 0));
-		return root;
-	}
+	//height为除去最后一层的高度
+	int n = end - start + 1, height = log(n + 1) / log(2), k = n + 1 - pow(2, height), root = start + (pow(2, height - 1) - 1) + min((int)pow(2, height - 1), k);
+	root_node* node = new root_node();
+	node->id = root;
+	node->start = start;
+	node->end = end;
+	return node;
 }
