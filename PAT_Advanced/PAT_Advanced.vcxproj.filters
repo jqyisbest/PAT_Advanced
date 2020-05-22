@@ -36,12 +36,378 @@
     <ClCompile Include="resolve1004.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="resolve1005.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1006.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1007.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1008.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1009.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1010.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1011.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1012.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1013.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1014.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1015.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1016.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1017.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1018.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1019.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1020.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1021.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1022.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1023.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1024.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1025.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1026.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1027.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1028.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1029.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1030.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1031.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1032.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1033.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1034.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1035.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1036.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1037.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1038.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1039.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1040.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1041.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1042.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1043.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1044.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1045.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1046.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1047.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1048.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1049.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1050.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1051.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1052.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1053.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1054.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1055.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1056.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1057.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1058.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1059.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1061.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1062.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1063.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1064.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1065.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1067.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resolve1004.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1006.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1005.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1007.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1008.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1009.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1010.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1011.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1012.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1013.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1014.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1015.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1016.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1017.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1018.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1019.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1020.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1021.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1022.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1023.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1024.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1025.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1026.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1027.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1028.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1029.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1030.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1031.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1032.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1033.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1034.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1035.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1036.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1037.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1038.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1039.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1040.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1041.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1042.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1043.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1044.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1045.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1046.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1047.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1048.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1049.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1050.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1051.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1052.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1053.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1054.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1055.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1056.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1057.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1058.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1059.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1061.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1062.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1063.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1064.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1065.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1067.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
