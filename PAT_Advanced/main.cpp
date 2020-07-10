@@ -1,7 +1,7 @@
-#include "resolve1080.h"
+#include "resolve1081.h"
 
 int main() {
-	int result_code = resolve1080::resolve();
+	int result_code = resolve1081::resolve();
 	cout << "\n";
 	system("pause");
 	return result_code;
