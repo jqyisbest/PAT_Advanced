@@ -105,7 +105,7 @@ int resolve1087::resolve()
         p->average_happiness = (double)p->total_happiness / (p->citys.size() - 1.0);
     }
     sort(cities[city_index["ROM"]]->best_paths.begin(), cities[city_index["ROM"]]->best_paths.end(), cmp_path);
-    printf("%d %d %d %d\n", cities[city_index["ROM"]]->best_paths.size(), cost[city_index["ROM"]], cities[city_index["ROM"]]->best_paths[0]->total_happiness, cities[city_index["ROM"]]->best_paths[0]->total_happiness / (cities[city_index["ROM"]]->best_paths[0]->citys.size() - 1));
+    printf("%d %d %d %d\n", (int)(cities[city_index["ROM"]]->best_paths.size()), cost[city_index["ROM"]], cities[city_index["ROM"]]->best_paths[0]->total_happiness, (int)(cities[city_index["ROM"]]->best_paths[0]->total_happiness / (cities[city_index["ROM"]]->best_paths[0]->citys.size() - 1)));
     path *best_path = cities[city_index["ROM"]]->best_paths[0];
     for (size_t i = 0; i < best_path->citys.size(); i++)
     {
