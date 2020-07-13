@@ -1,4 +1,5 @@
-
-namespace test {
+#include "common.h"
+namespace test
+{
 	int resolve();
 }

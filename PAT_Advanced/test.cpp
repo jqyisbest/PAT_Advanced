@@ -1,52 +1,65 @@
 #include "test.h"
-#include "common.h"
-namespace test {
-	int n, m, c1, c2;
-	int e[510][510], weight[510], dis[510], num[510], w[510];
-	bool visit[510];
-	const int inf = 99999999;
-	int resolve() {
-		scanf("%d%d%d%d", &n, &m, &c1, &c2);
-		for (int i = 0; i < n; i++)
-			scanf("%d", &weight[i]);
-		fill(e[0], e[0] + 510 * 510, inf);
-		fill(dis, dis + 510, inf);
-		int a, b, c;
-		for (int i = 0; i < m; i++) {
-			scanf("%d%d%d", &a, &b, &c);
-			e[a][b] = e[b][a] = c;
+namespace test
+{
+	long long a, b, c, d;
+	long long gcd(long long t1, long long t2)
+	{
+		return t2 == 0 ? t1 : gcd(t2, t1 % t2);
+	}
+	void func(long long m, long long n)
+	{
+		if (m * n == 0)
+		{
+			printf("%s", n == 0 ? "Inf" : "0");
+			return;
 		}
-		dis[c1] = 0;
-		w[c1] = weight[c1];
-		num[c1] = 1;
-		for (int i = 0; i < n; i++) {
-			int u = -1, minn = inf;
-			for (int j = 0; j < n; j++) {
-				if (visit[j] == false && dis[j] < minn) {
-					u = j;
-					minn = dis[j];
-				}
-			}
-			if (u == -1) break;
-			visit[u] = true;
-			for (int v = 0; v < n; v++) {
-				if (visit[v] == false && e[u][v] != inf) {
-					if (dis[u] + e[u][v] < dis[v]) {
-						dis[v] = dis[u] + e[u][v];
-						num[v] = num[u];
-						w[v] = w[u] + weight[v];
-						
-					}
-					else if (dis[u] + e[u][v] == dis[v]) {
-						cout << u << " " << v << " , = ,";
-						num[v] = num[v] + num[u];
-						if (w[u] + weight[v] > w[v])
-							w[v] = w[u] + weight[v];
-					}
-				}
-			}
+		bool flag = ((m < 0 && n > 0) || (m > 0 && n < 0));
+		m = abs(m);
+		n = abs(n);
+		long long x = m / n;
+		printf("%s", flag ? "(-" : "");
+		if (x != 0)
+			printf("%lld", x);
+		if (m % n == 0)
+		{
+			if (flag)
+				printf(")");
+			return;
 		}
-		printf("%d %d", num[c2], w[c2]);
+		if (x != 0)
+			printf(" ");
+		m = m - x * n;
+		long long t = gcd(m, n);
+		m = m / t;
+		n = n / t;
+		printf("%lld/%lld%s", m, n, flag ? ")" : "");
+	}
+	int resolve()
+	{
+		scanf("%lld/%lld %lld/%lld", &a, &b, &c, &d);
+		func(a, b);
+		printf(" + ");
+		func(c, d);
+		printf(" = ");
+		func(a * d + b * c, b * d);
+		printf("\n");
+		func(a, b);
+		printf(" - ");
+		func(c, d);
+		printf(" = ");
+		func(a * d - b * c, b * d);
+		printf("\n");
+		func(a, b);
+		printf(" * ");
+		func(c, d);
+		printf(" = ");
+		func(a * c, b * d);
+		printf("\n");
+		func(a, b);
+		printf(" / ");
+		func(c, d);
+		printf(" = ");
+		func(a * d, b * c);
 		return 0;
 	}
 }
