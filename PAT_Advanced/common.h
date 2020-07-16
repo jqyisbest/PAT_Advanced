@@ -6,6 +6,7 @@
 #include <vector>
 #include <set>
 #include <map>
+#include <queue>
 #include <iomanip>
 //1042 使用memcpy出现编译错误
 //自此提交时全部使用 
