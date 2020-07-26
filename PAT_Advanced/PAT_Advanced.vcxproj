@@ -148,6 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="common.cpp" />
+    <ClCompile Include="exam1.cpp" />
+    <ClCompile Include="exam2.cpp" />
+    <ClCompile Include="exam3.cpp" />
+    <ClCompile Include="exam4.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resolve1018.cpp" />
     <ClCompile Include="resolve1007.cpp" />
