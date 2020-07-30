@@ -351,6 +351,12 @@
     <ClCompile Include="resolve1105.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="resolve1106.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="resolve1107.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -660,6 +666,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resolve1105.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1106.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1107.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
