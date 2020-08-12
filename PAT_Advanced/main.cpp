@@ -1,7 +1,7 @@
-#include "resolve1134.h"
+#include "resolve1135.h"
 
 int main() {
-	int result_code = resolve1134::resolve();
+	int result_code = resolve1135::resolve();
 	cout << "\n";
 	system("pause");
 	return result_code;
