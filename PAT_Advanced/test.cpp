@@ -1,65 +1,39 @@
 #include "test.h"
 namespace test
 {
-	long long a, b, c, d;
-	long long gcd(long long t1, long long t2)
-	{
-		return t2 == 0 ? t1 : gcd(t2, t1 % t2);
+	bool isprime(int n) {
+		for (int i = 2; i * i <= n; i++)
+			if (n % i == 0) return false;
+		return true;
 	}
-	void func(long long m, long long n)
-	{
-		if (m * n == 0)
-		{
-			printf("%s", n == 0 ? "Inf" : "0");
-			return;
+	int resolve() {
+		int tsize, n, m, a;
+		scanf("%d %d %d", &tsize, &n, &m);
+		while (!isprime(tsize)) tsize++;
+		vector<int> v(tsize);
+		for (int i = 0; i < n; i++) {
+			scanf("%d", &a);
+			int flag = 0;
+			for (int j = 0; j < tsize; j++) {
+				int pos = (a + j * j) % tsize;
+				if (v[pos] == 0) {
+					v[pos] = a;
+					flag = 1;
+					break;
+				}
+			}
+			if (!flag) printf("%d cannot be inserted.\n", a);
 		}
-		bool flag = ((m < 0 && n > 0) || (m > 0 && n < 0));
-		m = abs(m);
-		n = abs(n);
-		long long x = m / n;
-		printf("%s", flag ? "(-" : "");
-		if (x != 0)
-			printf("%lld", x);
-		if (m % n == 0)
-		{
-			if (flag)
-				printf(")");
-			return;
+		int ans = 0;
+		for (int i = 0; i < m; i++) {
+			scanf("%d", &a);
+			for (int j = 0; j <= tsize; j++) {
+				ans++;
+				int pos = (a + j * j) % tsize;
+				if (v[pos] == a || v[pos] == 0) break;
+			}
 		}
-		if (x != 0)
-			printf(" ");
-		m = m - x * n;
-		long long t = gcd(m, n);
-		m = m / t;
-		n = n / t;
-		printf("%lld/%lld%s", m, n, flag ? ")" : "");
-	}
-	int resolve()
-	{
-		scanf("%lld/%lld %lld/%lld", &a, &b, &c, &d);
-		func(a, b);
-		printf(" + ");
-		func(c, d);
-		printf(" = ");
-		func(a * d + b * c, b * d);
-		printf("\n");
-		func(a, b);
-		printf(" - ");
-		func(c, d);
-		printf(" = ");
-		func(a * d - b * c, b * d);
-		printf("\n");
-		func(a, b);
-		printf(" * ");
-		func(c, d);
-		printf(" = ");
-		func(a * c, b * d);
-		printf("\n");
-		func(a, b);
-		printf(" / ");
-		func(c, d);
-		printf(" = ");
-		func(a * d, b * c);
+		printf("%.1lf\n", ans * 1.0 / m);
 		return 0;
 	}
 }
