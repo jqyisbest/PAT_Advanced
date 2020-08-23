@@ -486,6 +486,9 @@
     <ClCompile Include="resolve1150.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="resolve1151.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -930,6 +933,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="resolve1150.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resolve1151.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
