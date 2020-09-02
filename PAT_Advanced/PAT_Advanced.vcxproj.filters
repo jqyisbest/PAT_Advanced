@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\exam202007">
+      <UniqueIdentifier>{c05ab189-e2a5-4262-8c70-231df33caf0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -330,18 +333,6 @@
     <ClCompile Include="resolve1102.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="exam1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="exam2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="exam3.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="exam4.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="resolve1103.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -500,6 +491,18 @@
     </ClCompile>
     <ClCompile Include="resolve1155.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exam1.cpp">
+      <Filter>源文件\exam202007</Filter>
+    </ClCompile>
+    <ClCompile Include="exam2.cpp">
+      <Filter>源文件\exam202007</Filter>
+    </ClCompile>
+    <ClCompile Include="exam3.cpp">
+      <Filter>源文件\exam202007</Filter>
+    </ClCompile>
+    <ClCompile Include="exam4.cpp">
+      <Filter>源文件\exam202007</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
