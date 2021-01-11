@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="common.h" />
     <ClInclude Include="resolve1001.h" />
+    <ClInclude Include="resolve1002.h" />
     <ClInclude Include="resolve1003.h" />
     <ClInclude Include="resolve1004.h" />
     <ClInclude Include="resolve1005.h" />
@@ -180,6 +181,7 @@
     <ClCompile Include="common.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resolve1001.cpp" />
+    <ClCompile Include="resolve1002.cpp" />
     <ClCompile Include="resolve1003.cpp" />
     <ClCompile Include="resolve1004.cpp" />
     <ClCompile Include="resolve1005.cpp" />
