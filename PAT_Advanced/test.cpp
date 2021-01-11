@@ -1,39 +1,37 @@
-#include "test.h"
-namespace test
-{
-	bool isprime(int n) {
-		for (int i = 2; i * i <= n; i++)
-			if (n % i == 0) return false;
-		return true;
-	}
-	int resolve() {
-		int tsize, n, m, a;
-		scanf("%d %d %d", &tsize, &n, &m);
-		while (!isprime(tsize)) tsize++;
-		vector<int> v(tsize);
-		for (int i = 0; i < n; i++) {
-			scanf("%d", &a);
-			int flag = 0;
-			for (int j = 0; j < tsize; j++) {
-				int pos = (a + j * j) % tsize;
-				if (v[pos] == 0) {
-					v[pos] = a;
-					flag = 1;
-					break;
-				}
-			}
-			if (!flag) printf("%d cannot be inserted.\n", a);
+#include <bits/stdc++.h>
+using namespace std;
+void find_in_half(vector<int> &total, int value) {
+	int i = 0, j = total.size() - 1, k = 0;
+	k = (i + j) / 2;
+	while (i <= j)
+	{
+		printf("%d %d\n", total[i], total[j]);
+		if (total[k] < value)
+		{
+			i = k + 1;
 		}
-		int ans = 0;
-		for (int i = 0; i < m; i++) {
-			scanf("%d", &a);
-			for (int j = 0; j <= tsize; j++) {
-				ans++;
-				int pos = (a + j * j) % tsize;
-				if (v[pos] == a || v[pos] == 0) break;
-			}
+		else
+		{
+			j = k - 1;
 		}
-		printf("%.1lf\n", ans * 1.0 / m);
-		return 0;
+		k = (i + j) / 2;
 	}
+	k = i;
+	printf("最终i为：%d\n最终j为：%d\n", i, j);
+}
+int main() {
+	vector<int> total(10);
+	for (int i = 1; i <= 10; i++)
+	{
+		total[i - 1] = 2 * i;
+		if (i != 1)
+		{
+			printf(" ");
+		}
+		printf("%d", i << 1);
+	}
+	printf("\n");
+	find_in_half(total, 19);
+	system("pause");
+	return 0;
 }

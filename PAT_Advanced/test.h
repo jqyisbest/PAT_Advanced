@@ -1,5 +1,7 @@
-#include "common.h"
+//#include "common.h"
+#include <bits/stdc++.h>
+using namespace std;
 namespace test
 {
-	int resolve();
+	//int main();
 }
