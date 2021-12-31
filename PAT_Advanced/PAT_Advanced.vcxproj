@@ -19,12 +19,45 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="common.h" />
-    <ClInclude Include="test.h" />
+    <ClCompile Include="round_2\common.cpp" />
+    <ClCompile Include="round_2\main.cpp" />
+    <ClCompile Include="round_2\round_2_resolve1001.cpp" />
+    <ClCompile Include="round_2\round_2_resolve1002.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1003.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1004.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1005.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="common.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="round_2\common.h" />
+    <ClInclude Include="round_2\round_2_resolve1001.h" />
+    <ClInclude Include="round_2\round_2_resolve1002.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1003.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1004.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1005.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{59925863-E38F-4983-ADC5-F2DC8A71033A}</ProjectGuid>

@@ -15,19 +15,46 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="common.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="round_2\round_2_resolve1001.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1002.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1003.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1004.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1005.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="common.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <ClInclude Include="round_2\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1001.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1002.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1003.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1004.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1005.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
