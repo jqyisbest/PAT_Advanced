@@ -38,6 +38,14 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1006.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1007.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="round_2\common.h" />
@@ -55,6 +63,14 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="round_2\round_2_resolve1005.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1006.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1007.h">
       <SubType>
       </SubType>
     </ClInclude>
