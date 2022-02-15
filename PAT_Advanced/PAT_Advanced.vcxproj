@@ -46,6 +46,26 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1008.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1009.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1010.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1011.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1012.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="round_2\common.h" />
@@ -71,6 +91,26 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="round_2\round_2_resolve1007.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1008.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1009.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1010.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1011.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1012.h">
       <SubType>
       </SubType>
     </ClInclude>

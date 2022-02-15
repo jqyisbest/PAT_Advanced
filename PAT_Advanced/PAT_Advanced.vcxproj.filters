@@ -42,6 +42,21 @@
     <ClCompile Include="round_2\round_2_resolve1007.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1008.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1009.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1010.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1011.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1012.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="round_2\common.h">
@@ -66,6 +81,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="round_2\round_2_resolve1007.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1008.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1009.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1010.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1011.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1012.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
