@@ -69,6 +69,9 @@
     <ClCompile Include="round_2\round_2_resolve1159.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1160.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="round_2\common.h">
@@ -120,6 +123,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="round_2\round_2_resolve1159.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1160.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -82,6 +82,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="round_2\round_2_resolve1160.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="round_2\common.h" />
@@ -143,6 +147,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="round_2\round_2_resolve1159.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="round_2\round_2_resolve1160.h">
       <SubType>
       </SubType>
     </ClInclude>
