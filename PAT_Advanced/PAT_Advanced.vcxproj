@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="round_3\common.h" />
+    <ClInclude Include="round_3\round_3_resolve1001.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="round_3\common.cpp" />
+    <ClCompile Include="round_3\main.cpp" />
+    <ClCompile Include="round_3\round_3_resolve1001.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{59925863-E38F-4983-ADC5-F2DC8A71033A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
