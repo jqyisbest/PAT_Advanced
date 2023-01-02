@@ -1,8 +1,8 @@
 #include "common.h"
-#include "round_3_resolve1001.h"
+#include "round_3_resolve1002.h"
 
 int main() {
-	int result_code = round_3_resolve1001::resolve();
+	int result_code = round_3_resolve1002::resolve();
 	cout << "\n";
 	system("pause");
 	return result_code;
